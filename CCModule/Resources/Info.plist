@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>SoloLock</string>
+    <key>CFBundleExecutable</key>
+    <string>SoloLockCC</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.yourname.sololockcc</string>
+    <key>NSPrincipalClass</key>
+    <string>SoloLockCCModule</string>
+    <key>CCSModulePresentationStyle</key>
+    <integer>0</integer>
+</dict>
+</plist>
