@@ -1,0 +1,9 @@
+Package: com.yourname.sololock
+Name: SoloLock
+Depends: mobilesubstrate, preferenceloader, com.opa334.ccsupport
+Version: 1.0.0
+Architecture: iphoneos-arm64 iphoneos-arm64e
+Description: Locks the device into a selected app with a Control Center escape toggle.
+Maintainer: YourName
+Author: YourName
+Section: Tweaks
