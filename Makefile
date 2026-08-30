@@ -8,7 +8,6 @@ TWEAK_NAME = SoloLock
 SoloLock_FILES = Tweak.x
 SoloLock_CFLAGS = -fobjc-arc
 SoloLock_FRAMEWORKS = UIKit CoreGraphics
-SoloLock_PRIVATE_FRAMEWORKS = SpringBoardServices
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
