@@ -16,6 +16,9 @@ jobs:
           git clone --depth=1 https://github.com/theos/sdks.git $THEOS/sdks
           echo "THEOS=$THEOS" >> $GITHUB_ENV
       - name: Build Package
+        run: |
+          chmod 0755 layout/DEBIAN/postinst
+          make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
         run: make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
