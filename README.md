@@ -1,4 +1,3 @@
 # SoloLock
-
-Auto opens specified app after iPhone is unlocked, then locks the app on screen. 
-Can be added to control center to disable.
+Locks the device into a selected app with a Control Center escape toggle. (has to be added in settings)
+supports rootless.
