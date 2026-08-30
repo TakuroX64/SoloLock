@@ -1,7 +1,7 @@
 #import "SoloLockCCModule.h"
 #import <notify.h>
 
-#define PREF_PATH @"/var/jb/var/mobile/Library/Preferences/com.yourname.sololock.plist"
+#define PREF_PATH @"/var/jb/var/mobile/Library/Preferences/com.jack.sololock.plist"
 
 @implementation SoloLockCCModule
 
@@ -14,8 +14,7 @@
     NSMutableDictionary *prefs = [NSMutableDictionary dictionaryWithContentsOfFile:PREF_PATH] ?: [NSMutableDictionary dictionary];
     [prefs setObject:@(selected) forKey:@"enabled"];
     [prefs writeToFile:PREF_PATH atomically:YES];
-    notify_post("com.yourname.sololock/ReloadPrefs");
-    [super refreshState];
+    notify_post("com.jack.sololock/ReloadPrefs");
 }
 
 - (UIImage *)iconGlyph {
